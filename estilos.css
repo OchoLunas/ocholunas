@@ -232,10 +232,15 @@ footer a {
 .boxes {
     display: grid;
     grid-template-columns: repeat(2, 300px);
-    gap: 30px;
+    gap: 10px;
     justify-content: center;
 }
-
+@media (max-width: 700px) {
+    .boxes {
+        grid-template-columns: 300px;
+        gap: 30px;
+    }
+}
 
 
 .galeria-box {
@@ -382,6 +387,7 @@ label[for="orden-productos"] {
     padding: 10px 16px;
     font-size: 14px;
     white-space: nowrap;
+}
 @media (max-width: 700px) {
     #barra-pedido {
         flex-direction: column;
