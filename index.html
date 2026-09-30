@@ -495,7 +495,12 @@
 </div>
 </div>
 </section>
-
+<div id="barra-pedido">
+    <span id="resumen-pedido">0 productos · $0</span>
+    <button onclick="document.getElementById('carrito').scrollIntoView({ behavior: 'smooth' })">
+        VER PEDIDO →
+    </button>
+</div>
 <section id="carrito">
     <h2>Tu pedido</h2>
     <div id="lista-pedido"></div>
