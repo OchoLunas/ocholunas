@@ -49,6 +49,23 @@ function mostrarPedido() {
     });
 
     total.textContent = "$" + totalPedido.toLocaleString("es-AR");
+
+    const barraPedido = document.getElementById("barra-pedido");
+    const resumenPedido = document.getElementById("resumen-pedido");
+
+    const cantidadTotal = pedido.reduce(function(acumulado, producto) {
+        return acumulado + producto.cantidad;
+    }, 0);
+
+    if (cantidadTotal > 0) {
+        resumenPedido.textContent =
+            cantidadTotal + (cantidadTotal === 1 ? " producto · $" : " productos · $") +
+            totalPedido.toLocaleString("es-AR");
+
+        barraPedido.style.display = "flex";
+    } else {
+        barraPedido.style.display = "none";
+    }
 }
 
 function cambiarCantidad(indice, cambio) {
@@ -59,14 +76,18 @@ function cambiarCantidad(indice, cambio) {
     }
 
     mostrarPedido();
-}function vaciarPedido() {
+}
+
+function vaciarPedido() {
     pedido = [];
     mostrarPedido();
 }
+
 function eliminarProducto(indice) {
     pedido.splice(indice, 1);
     mostrarPedido();
 }
+
 function enviarPedidoWhatsApp() {
     const nombre = document.getElementById("nombre-cliente").value.trim();
     const contacto = document.getElementById("contacto-cliente").value.trim();
@@ -118,6 +139,7 @@ function enviarPedidoWhatsApp() {
 
     window.open(url, "_blank");
 }
+
 let fotosCannabis = [
     "imagenes/BOX CANNABIS 1.png",
     "imagenes/BOX CANNABIS 2.png"
@@ -139,6 +161,7 @@ function cambiarFotoCannabis(direccion) {
     document.getElementById("foto-box-cannabis").src =
         fotosCannabis[fotoCannabisActual];
 }
+
 document.getElementById("orden-productos").addEventListener("change", function () {
 
     const contenedor = document.querySelector(".productos");
@@ -170,6 +193,7 @@ document.getElementById("orden-productos").addEventListener("change", function (
 
     productos.forEach(producto => contenedor.appendChild(producto));
 });
+
 document.getElementById("orden-boxes").addEventListener("change", function () {
 
     const contenedor = document.querySelector(".boxes");

@@ -252,13 +252,16 @@ footer a {
     object-fit: cover;
     display: block;
 }
-.box {
-    width: 300px;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+.box { 
+    width: 300px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
     min-height: 650px;
+    background-color: #eeece4;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(52, 68, 54, 0.15);
 }
 .box > button {
     margin-top: auto;
@@ -343,4 +346,40 @@ label[for="orden-productos"] {
 #orden-productos:focus {
     outline: none;
     border-color: #344436;
+}
+@media (max-width: 700px) {
+    header button {
+        display: block;
+        width: 90%;
+        margin: 12px auto;
+    }
+}
+#barra-pedido {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #344436;
+    color: #f3f0e8;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: 0 -4px 15px rgba(52, 68, 54, 0.2);
+}
+
+#barra-pedido span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#barra-pedido button {
+    background-color: #f3f0e8;
+    color: #344436;
+    padding: 10px 16px;
+    font-size: 14px;
+    white-space: nowrap;
 }
