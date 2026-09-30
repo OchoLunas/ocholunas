@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocho Lunas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌙 Ocho Lunas</h1>
+
+    <p>Sahumerios, aromas y rituales para acompañar tus momentos.</p>
+
+   <button onclick="document.getElementById('productos').scrollIntoView({ behavior: 'smooth' })">
+    Ver productos
+</button>
+<button onclick="document.getElementById('boxes').scrollIntoView({ behavior: 'smooth' })">
+    Box de Regalos
+</button>
+</header>
+
+<section class="bienvenida">
+
+    <h2>Encontrá tu aroma</h2>
+
+    <p>Elegí el sahumerio que acompañe tu momento.</p>
+
+</section>
+
+<section id="productos">
+    <h2>Elegí tu ritual</h2>
+
+<p class="subtitulo-productos">Descubrí nuestros sahumerios, aromas y accesorios.</p>
+<label for="orden-productos">Ordenar por:</label>
+
+<select id="orden-productos">
+    <option value="normal">Orden original</option>
+    <option value="menor">Precio: menor a mayor</option>
+    <option value="mayor">Precio: mayor a menor</option>
+    <option value="az">Nombre: A-Z</option>
+    <option value="za">Nombre: Z-A</option>
+</select>
+    <div class="productos">
+
+        <div class="producto">
+            <img src="imagenes/7 CHAKRAS CAJA.png" alt="Sahumerios 7 Chakras">
+            <h3>Sahumerios 7 Chakras</h3>
+
+            <p>21 varillas</p>
+
+            <strong>$1.000</strong>
+
+            <button onclick="agregarAlPedido('Sahumerios 7 Chakras', 1000)">Agregar al pedido</button>
+        </div>
+<div class="producto">
+<img src="imagenes/SACRED HEXAGONAL.png" alt="Sahumerios Sacred Hexagonal">
+    <h3>Sahumerios Hexagonales</h3>
+
+    <p>20 varillas</p>
+
+    <strong>$1.000</strong>
+
+    <button onclick="agregarAlPedido('Sahumerios Hexagonales', 1000)">Agregar al pedido</button>
+
+</div>
+<div class="producto">
+<img src="imagenes/TRIPLE EMPASTE.png" alt="Sahumerios Triple Empaste">
+    <h3>Sahumerios Triple Empaste</h3>
+
+    <p>10 varillas</p>
+
+    <strong>$1.000</strong>
+
+    <button onclick="agregarAlPedido('Sahumerios Triple Empaste', 1000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/ARO DE INCIENSO.png" alt="Aros de incienso">
+
+    <h3>Aros de incienso</h3>
+
+    <p>10 varillas + porta incienso de yeso</p>
+
+    <strong>$1.000</strong>
+
+    <button onclick="agregarAlPedido('Aros de incienso', 1000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/BOMBAS DEFUMACION.png" alt="Bombitas de defumación activada">
+
+    <h3>Bombitas de defumación activada</h3>
+
+    <p>Paquete de 4 unidades</p>
+
+    <strong>$1.000</strong>
+
+    <button onclick="agregarAlPedido('Bombitas de defumación activada', 1000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/CONO MANTRA.png" alt="Conos de incienso">
+
+    <h3>Conos de incienso</h3>
+
+    <p>12 unidades + porta chapita</p>
+
+    <strong>$1.000</strong>
+
+    <button onclick="agregarAlPedido('Conos de incienso', 1000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/CONO CASCADA MANTRA.png" alt="Cono cascada Mantra">
+
+    <h3>Cono cascada Mantra</h3>
+
+    <p>10 unidades</p>
+
+    <strong>$1.000</strong>
+
+    <button onclick="agregarAlPedido('Cono cascada Mantra', 1000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/ESCENCIA ILUMINARTE.png" alt="Esencias de hornito">
+
+    <h3>Esencias de hornito</h3>
+
+    <p>10 ml</p>
+
+    <strong>$1.000</strong>
+
+    <button onclick="agregarAlPedido('Esencias de hornito', 1000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/ROCIO AURICO.png" alt="Rocío Áurico">
+
+    <h3>Rocío Áurico</h3>
+
+    <p>60 ml</p>
+
+    <strong>$2.000</strong>
+
+    <button onclick="agregarAlPedido('Rocío Áurico', 2000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/MANTRA AUTO.png" alt="Aromatizante de auto Mantra">
+
+    <h3>Aromatizante de auto</h3>
+
+    <p>Limón</p>
+
+    <strong>$2.000</strong>
+
+    <button onclick="agregarAlPedido('Aromatizante de auto Mantra - Limón', 2000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/VELAS SAPHIRUS.png" alt="Velas Saphirus">
+
+    <h3>Velas Saphirus</h3>
+
+    <p>12 velas + vaso contenedor</p>
+
+    <strong>$2.500</strong>
+
+    <button onclick="agregarAlPedido('Velas Saphirus', 2500)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/SAUMERIOS SACRED PREMIUM.png" alt="Sahumerios Sacred Scents">
+
+    <h3>Sahumerios Sacred Scents</h3>
+
+    <p>Premium · 30 varillas</p>
+
+    <strong>$2.000</strong>
+
+    <button onclick="agregarAlPedido('Sahumerios Sacred Scents', 2000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/AROMATIZANTE DE TELA.png" alt="Aromatizante de tela y ambiente">
+
+    <h3>Aromatizante de tela y ambiente</h3>
+
+    <p>200 ml</p>
+
+    <strong>$3.000</strong>
+
+    <button onclick="agregarAlPedido('Aromatizante de tela y ambiente', 3000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/SAHUMERIO CANNABIS.png" alt="Sahumerio Cannabis">
+
+    <h3>Sahumerio Cannabis</h3>
+
+    <p>Con terpenos · 6 varillas</p>
+
+    <strong>$2.500</strong>
+
+    <button onclick="agregarAlPedido('Sahumerio Cannabis', 2500)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/CONO CANNABIS.png" alt="Cono Cannabis">
+
+    <h3>Cono Cannabis</h3>
+
+    <p>Con terpenos · 6 conos</p>
+
+    <strong>$2.500</strong>
+
+    <button onclick="agregarAlPedido('Cono Cannabis', 2500)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/PALO SANTO SAGARADA.png" alt="Sahumerios Herbales Sagrada Madre">
+
+    <h3>Sahumerios Herbales</h3>
+
+    <p>Sagrada Madre</p>
+
+    <strong>$2.000</strong>
+
+    <button onclick="agregarAlPedido('Sahumerios Herbales Sagrada Madre', 2000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/PORTA MADERA.png" alt="Porta sahumerio de madera reforzada">
+
+    <h3>Porta sahumerio de madera reforzada</h3>
+
+    <p>Color madera</p>
+
+    <strong>$2.000</strong>
+
+    <button onclick="agregarAlPedido('Porta sahumerio de madera reforzada', 2000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/PORTA MADERA BLANCA.png" alt="Porta sahumerio de madera reforzada blanco">
+
+    <h3>Porta sahumerio de madera reforzada</h3>
+
+    <p>Color blanco</p>
+
+    <strong>$2.000</strong>
+
+    <button onclick="agregarAlPedido('Porta sahumerio de madera reforzada - Blanco', 2000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/COPAS DE CARBON.png" alt="Copas de Carbón">
+
+    <h3>Copas de Carbón</h3>
+
+    <p>Listas para sahumar · Caja x6 unidades</p>
+
+    <strong>$3.000</strong>
+
+    <button onclick="agregarAlPedido('Copas de Carbón', 3000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="producto">
+
+    <img src="imagenes/TAROT.png" alt="Sahumerios Tarot">
+
+    <h3>Sahumerios Tarot</h3>
+
+    <p>Con cartas de gemas coleccionables</p>
+
+    <strong>$2.500</strong>
+
+    <button onclick="agregarAlPedido('Sahumerios Tarot', 2500)">
+        Agregar al pedido
+    </button>
+
+</div>
+    </div>
+</section>
+</section>
+<section id="boxes">
+    <h2>Box de Regalos</h2>
+    <p>Regalos pensados para acompañar tus momentos especiales.</p>
+<label for="orden-boxes">Ordenar por:</label>
+
+<select id="orden-boxes">
+    <option value="normal">Orden original</option>
+    <option value="menor">Precio: menor a mayor</option>
+    <option value="mayor">Precio: mayor a menor</option>
+    <option value="az">Nombre: A-Z</option>
+    <option value="za">Nombre: Z-A</option>
+</select>
+    <div class="boxes">
+        
+   <div class="box">
+
+    <div class="galeria-box">
+        <img id="foto-box-cannabis" src="imagenes/BOX CANNABIS 1.png" alt="Box Cannabis">
+        
+        <button onclick="document.getElementById('foto-box-cannabis').src='imagenes/BOX CANNABIS 2.png'">‹</button>
+
+<button onclick="document.getElementById('foto-box-cannabis').src='imagenes/BOX CANNABIS 1.png'">›</button>
+    </div>
+
+    <h3>Box Cannabis</h3>
+
+    <p>
+        Incluye:<br>
+        • Sahumerios con terpenos<br>
+        • Conos Cannabis<br>
+        • Bombitas clásicas
+    </p>
+
+    <strong>$6.500</strong>
+
+    <button onclick="agregarAlPedido('Box Cannabis', 6500)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="box">
+
+    <div class="galeria-box">
+        <img src="imagenes/BOX CLASICO.png" alt="Box Clásico">
+    </div>
+
+    <h3>Box Clásico</h3>
+
+    <p>
+        <strong>Incluye:</strong><br>
+        • Bombitas de defumación activada para limpieza energética<br>
+        • Aros o conos de incienso (incluye porta incienso)<br>
+        • Varillas premium · 30 unidades<br>
+        • Sahumerios herbales
+    </p>
+
+    <strong>$6.000</strong>
+
+    <button onclick="agregarAlPedido('Box Clásico', 6000)">
+        Agregar al pedido
+    </button>
+
+</div>  
+<div class="box">
+
+    <div class="galeria-box">
+        <img src="imagenes/7 CHAKRAS COMBO.png" alt="7 Chakras Combo">
+    </div>
+
+    <h3>7 Chakras Combo</h3>
+
+    <p>
+        <strong>Incluye:</strong><br>
+        • Copas de carbón para sahumar<br>
+        • 7 bombitas de defumación<br>
+        • 21 varillas de sahumerios
+    </p>
+
+    <strong>$5.000</strong>
+
+    <button onclick="agregarAlPedido('7 Chakras Combo', 5000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="box">
+
+    <div class="galeria-box">
+        <img src="imagenes/BOX LIMPIEZA ENERGETICA.png" alt="Box Limpieza Energética">
+    </div>
+
+    <h3>Box Limpieza Energética</h3>
+
+    <p>
+        <strong>Incluye:</strong><br>
+        • Sahumador de yeso<br>
+        • 4 paquetes de bombitas · 16 unidades<br>
+        • 12 varillas de triple empaste<br>
+        • Porta sahumerio de madera
+    </p>
+
+    <strong>$8.000</strong>
+
+    <button onclick="agregarAlPedido('Box Limpieza Energética', 8000)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="box">
+
+    <div class="galeria-box">
+        <img src="imagenes/BOX ESENCIA DE HOGAR.png" alt="Box Esencia de Hogar">
+    </div>
+
+    <h3>Box Esencia de Hogar</h3>
+
+    <p>
+        <strong>Incluye:</strong><br>
+        • Aromatizante de tela<br>
+        • Esencia para hornito<br>
+        • Sahumerios Sacred · más de 30 varillas<br>
+        • Bombas de defumación
+    </p>
+
+    <strong>$7.500</strong>
+
+    <button onclick="agregarAlPedido('Box Esencia de Hogar', 7500)">
+        Agregar al pedido
+    </button>
+
+</div>
+<div class="box">
+
+    <div class="galeria-box">
+        <img src="imagenes/BOX RITUAL PREMIUM.png" alt="Box Ritual Premium">
+    </div>
+
+    <h3>Box Ritual Premium</h3>
+
+    <p>
+        <strong>Incluye:</strong><br>
+        • Aromatizante de tela<br>
+        • 8 bombitas de defumación<br>
+        • 10 sahumerios triple empaste<br>
+        • 30 varillas premium Sacred<br>
+        • Aros de incienso · caja x10 varillas<br>
+        • Porta sahumerio de madera
+    </p>
+
+    <strong>$10.000</strong>
+
+    <button onclick="agregarAlPedido('Box Ritual Premium', 10000)">
+        Agregar al pedido
+    </button>
+
+</div>
+</div>
+</section>
+
+<section id="carrito">
+    <h2>Tu pedido</h2>
+    <div id="lista-pedido"></div>
+    <strong id="total-pedido">$0</strong>
+    <button onclick="vaciarPedido()">Vaciar pedido</button>
+</section>
+
+<section id="datos-cliente">
+    <h2>Datos del pedido</h2>
+
+    <label for="nombre-cliente">Nombre</label>
+<input type="text" id="nombre-cliente" placeholder="Tu nombre">
+
+<label for="contacto-cliente">Teléfono</label>
+<input type="text" id="contacto-cliente" placeholder="Tu teléfono">
+
+<label for="mensaje-cliente">Aclaración</label>
+<textarea id="mensaje-cliente" placeholder="¿Querés agregar alguna aclaración?"></textarea>
+
+    <button onclick="enviarPedidoWhatsApp()">Enviar pedido por WhatsApp</button>
+
+<script src="pedido.js"></script>
+
+<footer>
+    <p>Seguinos en Instagram</p>
+    <a href="https://www.instagram.com/ocho.lunas/" target="_blank">@ocho.lunas</a>
+</footer>
+
+</body>
+</html>

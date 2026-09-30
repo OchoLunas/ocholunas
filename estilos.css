@@ -1,0 +1,346 @@
+body {
+    background-color: #f3f0e8;
+    color: #344436;
+    font-family: Georgia, serif;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #5d6b5a;
+}
+
+button {
+    background-color: #344436;
+    color: #f3f0e8;
+    border: none;
+    padding: 16px 34px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+    .producto button {
+    width: 100%;
+    margin-top: 5px;
+}
+.producto {
+    background-color: #eeece4;
+    max-width: 280px;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(52, 68, 54, 0.15);
+    text-align: center;
+}
+
+.producto h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.producto strong {
+    display: block;
+    font-size: 20px;
+    margin: 15px 0;
+}.producto img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+}.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+}   .producto {
+    width: 300px;
+    box-sizing: border-box;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.producto button {
+    margin-top: auto;
+}
+.producto img {
+    width: 100%;
+    max-width: 250px;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+}header {
+    
+    background-color: #e8e5d9;
+    padding: 40px 25px;
+    border-radius: 25px;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}section {
+    max-width: 1000px;
+    margin: 0 auto;
+}.bienvenida {
+    text-align: center;
+    margin: 20px auto 40px;
+}
+
+.bienvenida h2 {
+    font-size: 32px;
+    color: #344436;
+    margin-bottom: 10px;
+}
+
+.bienvenida p {
+    font-size: 18px;
+    color: #5d6b5a;
+}.bienvenida h2::after {
+    content: " ☾";
+    font-size: 24px;
+}
+section > h2 {
+    font-size: 32px;
+    color: #344436;
+    margin-bottom: 10px;
+}
+#carrito {
+    background-color: #e8e5d9;
+    max-width: 650px;
+    margin: 50px auto 0;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(52, 68, 54, 0.15);
+}
+
+#carrito h2 {
+    color: #344436;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#lista-pedido p {
+    font-size: 17px;
+    color: #344436;
+}
+#total-pedido {
+    display: block;
+    font-size: 26px;
+    color: #344436;
+    margin: 25px 0;
+}
+#carrito button {
+    padding: 8px 14px;
+    margin: 5px;
+    font-size: 16px;
+}#datos-cliente {
+    max-width: 650px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+#datos-cliente input,
+#datos-cliente textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #d4d0c2;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: Georgia, serif;
+}
+#datos-cliente {
+    background-color: #e8e5d9;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(52, 68, 54, 0.15);
+}
+#datos-cliente label {
+    display: block;
+    margin-bottom: 6px;
+    color: #344436;
+    font-weight: bold;
+}
+#datos-cliente button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
+}
+footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #344436;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+footer a {
+    font-size: 36px;
+    font-weight: bold;
+    color: #344436;
+    text-decoration: none;
+}
+.producto h3 {
+    min-height: 54px;
+}
+
+.producto strong {
+    min-height: 24px;
+}
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.producto {
+    width: 300px;
+}
+.box {
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 30px;
+    justify-content: center;
+}
+
+
+
+.galeria-box {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+}
+
+.galeria-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.box {
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 650px;
+}
+.box > button {
+    margin-top: auto;
+}
+
+.box .galeria-box {
+    width: 260px;
+    height: 260px;
+    margin: 0 auto 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box .galeria-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.box h3 {
+    margin: 10px 0;
+}
+
+.box p {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.box > strong {
+    display: block;
+    margin: 10px 0;
+}
+
+.box > button {
+    width: 100%;
+}
+#orden-productos {
+    padding: 12px 18px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #344436;
+    background-color: #e6eadf;
+    border: 2px solid #344436;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px 0 25px;
+}
+#orden-boxes {
+    padding: 12px 18px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #344436;
+    background-color: #e6eadf;
+    border: 2px solid #344436;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px 0 25px;
+}
+
+#orden-boxes:focus {
+    outline: none;
+    border-color: #344436;
+}
+
+label[for="orden-boxes"] {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #344436;
+    margin-bottom: 8px;
+}
+label[for="orden-productos"] {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #344436;
+    margin-bottom: 8px;
+}
+
+#orden-productos:focus {
+    outline: none;
+    border-color: #344436;
+}
